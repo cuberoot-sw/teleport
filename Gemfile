@@ -17,6 +17,9 @@ gem 'builder','~> 3.0.0'
 gem 'devise', '~> 1.4.9'
 gem 'devise_invitable', '~> 0.6.0'
 gem 'recaptcha', '~> 0.3.4', :require => 'recaptcha/rails'
+gem "jiraSOAP" , :git => "https://github.com/Marketcircle/jiraSOAP.git"
+gem "aes", '0.4.0'
+gem 'hoptoad_notifier', "~> 2.4"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -29,6 +32,8 @@ end
 # To use debugger
 group :development do
   gem 'ruby-debug19', '~> 0.11.6', :require => 'ruby-debug'
+  gem 'capistrano'
+  gem 'capistrano_rsync_with_remote_cache'
 end
 
 gem 'therubyracer', '~> 0.9.8'

@@ -1,13 +1,13 @@
-user "scheduler"
+user "skinscheduler"
 ruby "1.9.2"
-server "ytschedulerdev-real"
-server "root@50.57.178.221"
-server "root@ytschedulerdev-real"
+server "ytskinscheduler-dev"
+server "root@50.57.144.143"
+server "root@ytskinscheduler-dev"
 
 
 packages %w(gcc openssl libreadline5 libreadline5-dev curl
   git-core libopenssl-ruby libcurl4-openssl-dev 
-  libsqlite3-0 libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev
-  libmysqlclient-dev mysql-client mysql-server)
+  imagemagick libxml2-dev libxslt1-dev nginx
+  mysql-client mysql-server)
 
 recipes %w(install_passenger.rb)
