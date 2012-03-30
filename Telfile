@@ -6,8 +6,9 @@ server "root@ytskinscheduler-dev"
 
 
 packages %w(gcc openssl libreadline5 libreadline5-dev curl
-  git-core libopenssl-ruby libcurl4-openssl-dev 
-  imagemagick libxml2-dev libxslt1-dev nginx
+  git-core libopenssl-ruby libcurl4-openssl-dev postfix tmux
+  imagemagick libxml2-dev libxslt1-dev libpcre3-dev  libpcre++-dev libmysqlclient-dev mysql-common libmysql++-dev
   mysql-client mysql-server)
 
 recipes %w(install_passenger.rb)
+
