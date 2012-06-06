@@ -1,0 +1,6 @@
+server {
+   listen 80;
+   server_name 173.45.229.152;
+   root /home/girish/public_html/campaigns-tracker/current/public;
+   passenger_enabled on;
+}
