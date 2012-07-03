@@ -1,11 +1,11 @@
 user "girish"
-ruby "1.8.7"
-server "yttrack-1"
+ruby "1.9.3"
+server "joes-slice"
 
 
 packages %w(gcc openssl libreadline5 libreadline5-dev curl
   git-core libopenssl-ruby libcurl4-openssl-dev postfix tmux
-  # imagemagick 
+  # imagemagick libmagick9-dev
   libxml2-dev libxslt1-dev libpcre3-dev  libpcre++-dev libmysqlclient-dev mysql-common libmysql++-dev
   mysql-client mysql-server)
 
